@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda Deportiva</title>
-</head>
-<body>
-  <p>Hola mundo</p>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a Sports Shope</title>
+    <!-- //TODO: importacion tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //TODO: importacion librerias -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- //TODO: importacion css -->
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css/form.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 class="logo">
+          <a href="/">
+            <span>Sports</span>
+            <span class="logo-seg-color">SHOP</span>
+          </a>
+        </h1>
+      </div>
+
+      <nav class="nav">
+        <div class="container-menu">
+          <label class="btn-menu" for="menu-input">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+        <input id="menu-input" type="checkbox" />
+
+        <div class="container-ul">
+          <ul class="menu-account">
+            <li>
+              <a href="/register">
+                Registrarse <i class="fa-solid fa-address-card"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/login">
+                Ingresar<i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/productCart">
+                Mi Carrito<i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="form" action="/">
+        <div class="form-group">
+          <label for="user">Usuario</label>
+          <input
+            class="form-input"
+            type="text"
+            id="user"
+            name="user"
+            placeholder="Ingrese el Usuario"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input
+            class="form-input"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingrese la Contraseña"
+          />
+        </div>
+        <div class="form-group form-actions">
+          <input class="form-submit w-100" type="submit" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-title">Diseños personalizados</h3>
+          <p class="footer-text">
+            Si tienes una idea, la convertimos en tu prenda favorita.
+          </p>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-title">Siguenos</h3>
+          <ul class="footer-social">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </footer>
+  </body>
 </html>

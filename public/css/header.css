@@ -1,0 +1,122 @@
+.header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+}
+
+.logo span {
+  font-family: "Bowlby One SC", cursive;
+  color: #ffffff;
+}
+
+.logo .logo-seg-color {
+  color: var(--color-teal);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: var(--color-teal);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Manejo menu hamburguesa */
+#menu-input {
+  display: none;
+}
+
+.container-ul {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 79px;
+  left: 0;
+  z-index: 5;
+}
+
+.menu-links,
+.menu-account {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-links,
+.menu-account {
+  padding: 10px;
+  font-size: 14px;
+  list-style: none;
+  background-color: var(--color-primary);
+}
+
+#menu-input:checked ~ .container-ul {
+  display: block;
+}
+/* ----------------------- */
+
+.menu-links li,
+.menu-account li {
+  padding: 8px;
+}
+
+.menu-links li a,
+.menu-account li a {
+  color: var(--color-white);
+}
+
+.menu-account i {
+  margin-left: 5px;
+}
+
+/* ESTILOS TABLET */
+@media (min-width: 769px) {
+  .logo {
+    width: 300px;
+    padding-left: 20px;
+  }
+
+  .header h4 {
+    width: auto;
+    display: inline-block;
+  }
+
+  .container-menu {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .container-ul {
+    display: block;
+    width: auto;
+    position: unset;
+  }
+
+  .menu-links,
+  .menu-account {
+    flex-direction: row;
+  }
+}
