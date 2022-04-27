@@ -19,7 +19,7 @@ app.get("/productCart", (req, res) => {
 });
 
 app.get("/productDetail", (req, res) => {
-  res.sendFile(__dirname + "./views/productDetail.html");
+  res.sendFile(__dirname + "/views/productDetail.html");
 });
 
 app.get("/register", (req, res) => {
