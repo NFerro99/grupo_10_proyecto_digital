@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/NFerro99/grupo_10_proyecto_digital#readme",
   "dependencies": {
+    "ejs": "^3.1.7",
     "express": "^4.17.3"
   }
 }

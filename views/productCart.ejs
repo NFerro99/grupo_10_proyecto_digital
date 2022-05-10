@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a Sports Shope</title>
+    <!-- //TODO: importacion tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //TODO: importacion librerias -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- //TODO: importacion css -->
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css/productcart.css" type="text/css" />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+
+    <main class="main-carrito">
+      <div class="main-container">
+        <article class="card-carrito">
+          <div class="carrito">
+            <img
+              src="images/Hoodie-Manchester-United.jpg"
+              alt="Buzo manchester united"
+              class="product-img-cart"
+            />
+          </div>
+
+          <div class="cart-description">
+            <h4 class="description">Buzo Manchester United</h4>
+          </div>
+          <div class="button-agg">
+            <input type="button" id="btAdd" value="-" class="bt" />
+            <input type="button" id="btRemove" value="1" class="bt" />
+            <input type="button" id="btRemoveAll" value="+" class="bt" />
+          </div>
+
+          <div class="cart-description">
+            <p class="price">$180.000</p>
+          </div>
+        </article>
+
+        <article class="card-carrito">
+          <div class="carrito">
+            <img
+              src="images/chaqueta-liverpool.jpg"
+              alt="chaqueta liverpool"
+              class="product-img-cart"
+            />
+          </div>
+
+          <div class="cart-description">
+            <h4 class="description">chaqueta liverpool</h4>
+          </div>
+
+          <div class="button-agg">
+            <input type="button" id="btAdd" value="-" class="bt" />
+            <input type="button" id="btRemove" value="1" class="bt" />
+            <input type="button" id="btRemoveAll" value="+" class="bt" />
+          </div>
+
+          <div class="cart-description">
+            <p class="price">$200.000</p>
+          </div>
+        </article>
+
+        <div class="envio-price">
+          <h3 class="total-envio">Total Con Envío</h3>
+          <p class="total-price">$400.000</p>
+        </div>
+
+        <div class="continuar-compra">
+          <input
+            class="continuar-compra-b"
+            type="submit"
+            value="Continuar Compra"
+          />
+        </div>
+      </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+  </body>
+</html>

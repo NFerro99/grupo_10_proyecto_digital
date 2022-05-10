@@ -26,46 +26,9 @@
     <link rel="stylesheet" href="/css/footer.css" type="text/css" />
     <link rel="stylesheet" href="/css/form.css" type="text/css" />
   </head>
+
   <body>
-    <header class="header">
-      <div>
-        <h1 class="logo">
-          <a href="/">
-            <span>Sports</span>
-            <span class="logo-seg-color">SHOP</span>
-          </a>
-        </h1>
-      </div>
-
-      <nav class="nav">
-        <div class="container-menu">
-          <label class="btn-menu" for="menu-input">
-            <i class="fas fa-bars"></i>
-          </label>
-        </div>
-        <input id="menu-input" type="checkbox" />
-
-        <div class="container-ul">
-          <ul class="menu-account">
-            <li>
-              <a href="/register">
-                Registrarse <i class="fa-solid fa-address-card"></i>
-              </a>
-            </li>
-            <li>
-              <a href="/login">
-                Ingresar<i class="fa-solid fa-arrow-right-to-bracket"></i>
-              </a>
-            </li>
-            <li>
-              <a href="/productCart">
-                Mi Carrito<i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <%- include('./../partials/header') %>
     <main>
       <form class="form" action="/">
         <div class="form-group">
@@ -93,41 +56,6 @@
         </div>
       </form>
     </main>
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3 class="footer-title">Diseños personalizados</h3>
-          <p class="footer-text">
-            Si tienes una idea, la convertimos en tu prenda favorita.
-          </p>
-        </div>
-        
-        <div class="footer-column">
-          <h3 class="footer-title">Siguenos</h3>
-          <ul class="footer-social">
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-    </footer>
+    <%- include('./../partials/footer') %>
   </body>
 </html>
